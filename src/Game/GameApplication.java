@@ -189,7 +189,6 @@ public class GameApplication extends Application
 	
 	private void mOnDraw(GraphicsContext pGraphicsContext)
 	{
-		Font vFont = Font.font( "Times New Roman", FontWeight.BOLD, 14 );
 		this.aGame.mDraw(pGraphicsContext);
 	}
 	
@@ -231,7 +230,7 @@ public class GameApplication extends Application
 	
 	private void mOnMouseMoved(MouseEvent e)
 	{
-		
+		this.aGame.mMouseMove(e);
 	}
 	
 	private void mOnMouseClicked(MouseEvent e)
